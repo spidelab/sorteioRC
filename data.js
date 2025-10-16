@@ -128,28 +128,29 @@ const rcHabilidades = [
   {
     nome: "Abstração seletiva",
     definicao:
-      "Habilidade de focalizar no que é fundamental em um conjunto de elementos, retirando temporariamente a atenção de características menos relevantes para o contexto, momento ou objetivo."
+      "Habilidade de focalizar em um conjunto de elementos (o que de fato seria fundamental no momento), retirando (temporariamente) a atenção dos elementos, características ou fatos menos relevantes naquele contexto, momento ou objetivo."
   },
   {
     nome: "Raciocínio Algorítmico",
     definicao:
-      "Habilidade de utilizar elementos algorítmicos para enunciação, leitura de mundo e tomada de decisões."
+      "Habilidade de utilizar-se de elementos algoritmicos para enunciação, leitura de mundo, e tomada de decisões."
   },
   {
     nome: "Análise de Padrões",
     definicao:
-      "Habilidade de analisar situações, fatos ou problemas a partir da classificação e categorização de elementos, reconhecendo e reutilizando padrões."
+      "Habilidade de analisar situações, fatos ou problemas a partir da classificação e categorização de elementos, características ou ocorrências, reconhecendo e reutilizando determinados padrões."
   },
   {
     nome: "Recomposição",
     definicao:
-      "Habilidade de analisar o todo a partir da junção de pequenas análises; útil quando dividir ajuda a observar a tarefa, situação ou problema como um todo."
+      "Habilidade de poder analisar o todo a partir da junção das pequenas análises. Pode ser utilizada em situações em que a divisão é um meio para observar a tarefa, situação ou problema como um todo."
   },
   {
     nome: "Paralelismo",
     definicao:
-      "Habilidade de compreender a coexistência de fenômenos paralelos e suas inter-relações, atuando estrategicamente com múltiplas tarefas, revezando prioridades para maximizar tempo e energia."
+      "Habilidade de compreender a coexistência de fenômenos paralelos ou paralelizados e suas interrelações. É também a habilidade de atuar estrategicamente com múltiplas tarefas em um mesmo tempo, de modo a maximizar tempo e energia, revezando a prioridade entre as tarefas a partir de determinado marcador."
   }
 ];
+
 
 
