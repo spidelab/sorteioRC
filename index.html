@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BNCC EI (4–6) • Sorteador de Atividades, Objetivos e RC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>BNCC – Educação Infantil (4–6) • Sorteador</h1>
+    <p>Sorteie atividades, objetivos por campo, princípios e habilidades do RC.</p>
+  </header>
+
+  <div class="wrap">
+    <!-- ===== ATIVIDADES ===== -->
+    <section class="panel" aria-labelledby="atividades-controles">
+      <h2 id="atividades-controles">🎯 Sorteio de Atividades</h2>
+      <div class="controls" role="group" aria-label="Sorteio de atividades da Educação Infantil">
+        <button id="btn-atividade-any"><span class="pill ativ">ATV</span>Sortear atividade (1–30)</button>
+        <button class="secondary" id="btn-atividade-reset">Reset atividades</button>
+      </div>
+      <section class="results" id="results-atividades" aria-live="polite" aria-label="Resultados: atividades"></section>
+    </section>
+
+    <!-- ===== OBJETIVOS BNCC ===== -->
+    <section class="panel" aria-labelledby="controles" style="margin-top:18px">
+      <h2 id="controles">🌈 Campos de Experiência (BNCC)</h2>
+      <div class="controls" role="group" aria-label="Sorteio de objetivos">
+        <button id="btn-any"><span class="pill">🎲</span>Objetivo aleatório (qualquer campo)</button>
+        <button data-campo="0"><span class="pill eo">CE1</span>O eu, o outro e o nós</button>
+        <button data-campo="1"><span class="pill cg">CE2</span>Corpo, gestos e movimentos</button>
+        <button data-campo="2"><span class="pill ts">CE3</span>Traços, sons, cores e formas</button>
+        <button data-campo="3"><span class="pill ef">CE4</span>Escuta, fala, pensamento e imaginação</button>
+        <button data-campo="4"><span class="pill et">CE5</span>Espaços, tempos, quantidades, relações e transformações</button>
+      </div>
+
+      <div class="legend" aria-hidden="true">
+        <span><i class="eo"></i> CE1</span>
+        <span><i class="cg"></i> CE2</span>
+        <span><i class="ts"></i> CE3</span>
+        <span><i class="ef"></i> CE4</span>
+        <span><i class="et"></i> CE5</span>
+      </div>
+
+      <div class="toolbar">
+        <button class="secondary" id="btn-clear">Limpar resultados</button>
+      </div>
+    </section>
+
+    <section class="results" id="results" aria-live="polite" aria-label="Resultados de objetivos"></section>
+
+    <!-- ===== PRÍNCIPIOS RC ===== -->
+    <section class="panel" aria-labelledby="rc-controles" style="margin-top:18px">
+      <h2 id="rc-controles">🧠 Princípios do Raciocínio Computacional</h2>
+      <div class="controls" role="group" aria-label="Sorteio de princípios do RC">
+        <button id="btn-rc-any"><span class="pill rc">RC</span>Sortear princípio (RC)</button>
+        <button class="secondary" id="btn-rc-reset">Reset princípios</button>
+      </div>
+      <section class="results" id="results-rc" aria-live="polite" aria-label="Resultados: princípios do RC"></section>
+    </section>
+
+    <!-- ===== HABILIDADES RC ===== -->
+    <section class="panel" aria-labelledby="rc-hab-controles" style="margin-top:18px">
+      <h2 id="rc-hab-controles">⚙️ Habilidades do Raciocínio Computacional</h2>
+      <div class="controls" role="group" aria-label="Sorteio de habilidades do RC">
+        <button id="btn-rc-hab-any"><span class="pill rch">RC</span>Sortear habilidade (RC)</button>
+        <button class="secondary" id="btn-rc-hab-reset">Reset habilidades</button>
+      </div>
+      <section class="results" id="results-rc-hab" aria-live="polite" aria-label="Resultados: habilidades do RC"></section>
+    </section>
+
+    <!-- ===== AÇÕES GERAIS ===== -->
+    <section class="panel" style="margin-top:18px">
+      <h2>🛠️ Ações gerais</h2>
+      <div class="controls" role="group" aria-label="Ações gerais">
+        <button id="btn-open-results"><span class="pill">📄</span>Abrir página com resultados</button>
+        <button id="btn-download-all"><span class="pill">⬇️</span>Baixar tudo (.txt)</button>
+        <button id="btn-reset-all"><span class="pill">♻️</span>Reset geral</button>
+        <button id="btn-toggle-theme" aria-pressed="false"><span class="pill">🟣</span>Ativar tema acessível</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts -->
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

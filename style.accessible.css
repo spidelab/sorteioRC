@@ -1,0 +1,118 @@
+/* Tema acessível (fundo claro, contraste alto) */
+:root.accessible{
+  /* Base (fundo claro + textos escuros) */
+  --bg: #f7f9fc;         /* fundo da página */
+  --card: #ffffff;       /* cartões/painéis */
+  --text: #0b0e14;       /* texto principal */
+  --muted: #374151;      /* texto secundário */
+  --ring: #cbd5e1;       /* bordas/separadores */
+
+  /* Cores dos campos — tons mais escuros para bom contraste em fundo claro */
+  --cor-eo: #1f5bd6;     /* CE1 – azul forte */
+  --cor-cg: #c62828;     /* CE2 – vermelho 700 */
+  --cor-ts: #0f766e;     /* CE3 – teal 700 */
+  --cor-ef: #b45309;     /* CE4 – âmbar 700 */
+  --cor-et: #1d4ed8;     /* CE5 – azul 700 */
+  --cor-rc: #7c3aed;     /* RC – violeta 600/700 */
+  --cor-rc-hab: #b45309; /* RC hab – laranja/âmbar 700 */
+}
+
+/* Fundo claro com discreta vinheta */
+:root.accessible body{
+  background: radial-gradient(1200px 800px at 20% 10%, #eef2ff 0%, var(--bg) 60%);
+  color: var(--text);
+  letter-spacing: .15px; /* leve ganho de legibilidade */
+}
+
+/* Painéis e cartões em claro */
+:root.accessible .panel{
+  background: rgba(0,0,0,0.02);
+  border-color: var(--ring);
+  box-shadow: 0 8px 22px rgba(0,0,0,.06);
+  backdrop-filter: none;
+}
+:root.accessible .card{
+  background: var(--card);
+  border-color: var(--ring);
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+:root.accessible .card::before{
+  /* brilho mais visível em claro, mas ainda sutil */
+  opacity: .10;
+  background: linear-gradient(120deg, transparent 0%, currentColor 120%);
+}
+
+/* Tipografia */
+:root.accessible .codigo{ color: #475569; }  /* cinza-escuro legível */
+:root.accessible .desc{ color: var(--text); }
+
+/* Botões e estados */
+:root.accessible button{
+  background: #ffffff;
+  border-color: var(--ring);
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+:root.accessible button:hover{
+  border-color: #94a3b8; /* slate-300 */
+}
+:root.accessible .secondary{
+  background: #f8fafc;  /* quase branco */
+  color: #111827;       /* cinza-900 */
+  border-style: dashed;
+}
+
+/* Pílulas — manter contraste alto (texto branco) */
+:root.accessible .pill{
+  color: #ffffff;         /* texto branco para contraste */
+}
+:root.accessible .pill.eo { background: var(--cor-eo); }
+:root.accessible .pill.cg { background: var(--cor-cg); }
+:root.accessible .pill.ts { background: var(--cor-ts); }
+:root.accessible .pill.ef { background: var(--cor-ef); }
+:root.accessible .pill.et { background: var(--cor-et); }
+:root.accessible .pill.rc { background: var(--cor-rc); }
+:root.accessible .pill.rch{ background: var(--cor-rc-hab); }
+
+/* “Quadradinhos” da legenda acompanham as paletas acessíveis */
+:root.accessible .legend .eo { background: var(--cor-eo); }
+:root.accessible .legend .cg { background: var(--cor-cg); }
+:root.accessible .legend .ts { background: var(--cor-ts); }
+:root.accessible .legend .ef { background: var(--cor-ef); }
+:root.accessible .legend .et { background: var(--cor-et); }
+
+/* Botão fechar (X) — contraste e foco visíveis */
+:root.accessible .card .close{
+  border-color: #94a3b8;
+  background: rgba(0,0,0,.04);
+  color: #0b0e14;
+}
+:root.accessible .card .close:hover{
+  background: rgba(0,0,0,.08);
+}
+
+/* Foco bem visível em toda a interface */
+:root.accessible :is(button, [role="button"], a, .close):focus{
+  outline: 3px solid #1e40af !important; /* azul-800 */
+  outline-offset: 2px;
+}
+
+/* Toasts — mantemos alto contraste independentemente do fundo claro */
+:root.accessible #toast{ z-index: 1000; }
+:root.accessible .toast{
+  background: rgba(15, 18, 32, 0.96);  /* bem escuro */
+  color: #ffffff;
+  border-color: transparent;
+}
+:root.accessible .toast.warn{
+  background: #fff4cc;       /* amarelo claro */
+  color: #3a2d00;            /* texto escuro */
+}
+:root.accessible .toast.ok{
+  background: #e6fff6;       /* verde água claro */
+  color: #083b33;            /* texto escuro */
+}
+
+/* Links na página de resultados (se houver) */
+:root.accessible a{ color: #1d4ed8; }
+:root.accessible a:hover{ text-decoration: underline; }
