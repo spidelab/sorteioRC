@@ -112,17 +112,13 @@ const camposExperiencia = [
 // ===== Princípios do RC =====
 const rcPrincipios = [
   { nome: "Criticidade", definicao: "Articular o raciocínio por meio de inferências logicamente bem construídas para analisar uma situação, avaliar uma experiência ou mesmo para desenvolver argumentos. Questionar é fundamental para o desenvolvimento da criticidade." },
-  { nome: "Criatividade", definicao: "Não é necessariamente sobre inventar algo novo. É juntar ideias diferentes para encontrar novas soluções, novas formas de analisar ou de transformar. Envolve imaginação, flexibilidade, curiosidade e coragem para tentar sem medo de errar.
-" },
-  { nome: "Colaboração", definicao: "Colaboração é compartilhar a aprendizagem, trabalhando junto com os outros, ouvindo, respeitando e ajudando. Na Educação Infantil, a colaboração aparece em gestos simples, como dividir brinquedos ou esperar a vez, e isso já mostra que a criança está aprendendo a conviver.
-" },
+  { nome: "Criatividade", definicao: "Não é necessariamente sobre inventar algo novo. É juntar ideias diferentes para encontrar novas soluções, novas formas de analisar ou de transformar. Envolve imaginação, flexibilidade, curiosidade e coragem para tentar sem medo de errar." },
+  { nome: "Colaboração", definicao: "Colaboração é compartilhar a aprendizagem, trabalhando junto com os outros, ouvindo, respeitando e ajudando. Na Educação Infantil, a colaboração aparece em gestos simples, como dividir brinquedos ou esperar a vez, e isso já mostra que a criança está aprendendo a conviver." },
   { nome: "Interpretabilidade", definicao: "Refere-se à atribuição de significado, compreensão e organização de informações com base em contextos específicos, conectando dados às estruturas cognitivas e experiências das crianças." },
   { nome: "Argumentatividade", definicao: "Refere-se ao desenvolvimento de estruturas lógicas de organização do conhecimento e comunicação, de modo a elaborar e expressar narrativas bem desenvolvidas. Não se refere ao ato de opinião, mas de justificar com base em evidências e fatos." },
-  { nome: "Protagonismo da criança", definicao: "É quando a criança, individualmente ou em grupo, toma as decisões quando provocada pela professora. Ser protagonista não deve ser uma permissão da professora, mas uma provocação intencionalmente planejada.
-" },
+  { nome: "Protagonismo da criança", definicao: "É quando a criança, individualmente ou em grupo, toma as decisões quando provocada pela professora. Ser protagonista não deve ser uma permissão da professora, mas uma provocação intencionalmente planejada." },
   { nome: "Protagonismo docente", definicao: "Refere-se à atuação ativa, crítica e reflexiva da professora no planejamento da ação educativa. Não se trata de ser o centro das atenções, mas de tomar decisões intencionais e fundamentadas, que se desdobram em práticas pedagógicas consistentes conforme as necessidades das crianças e dos objetivos de aprendizagem e desenvolvimento." },
-  { nome: "Autonomia", definicao: "Escolher caminhos, tomar decisões e reflexões próprias. O desenvolvimento da autonomia favorece e necessita da liberdade, da responsabilidade e da manutenção de sentido nas ações, interações e decisões.
-" },
+  { nome: "Autonomia", definicao: "Escolher caminhos, tomar decisões e reflexões próprias. O desenvolvimento da autonomia favorece e necessita da liberdade, da responsabilidade e da manutenção de sentido nas ações, interações e decisões." },
   { nome: "Autoreconhecimento identitário", definicao: "Está relacionado a auto reconhecer seu vínculo e sentimento de  pertença  a  uma determinada categoria, grupo ou comunidade, reconhecendo suas histórias e conexões com o hoje e o futuro." },
   { nome: "Empoderamento e emancipação", definicao: "Empoderar-se é tomar as rédeas do seu desenvolvimento, da sua aprendizagem e, consequentemente, da sua existência. É um fenômeno incremental ao longo da vida. Emancipar-se é tornar-se independente, apto em pensar por si mesmo, fazendo suas próprias escolhas e ações com responsabilidade" }
 ];
@@ -155,4 +151,5 @@ const rcHabilidades = [
       "Habilidade de compreender a coexistência de fenômenos paralelos e suas inter-relações, atuando estrategicamente com múltiplas tarefas, revezando prioridades para maximizar tempo e energia."
   }
 ];
+
 
